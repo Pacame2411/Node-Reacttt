@@ -14,7 +14,7 @@ app.get("/api", (req, res) => {
 
 // Todas las peticiones GET que no hayamos manejado en las líneas anteriores retornaran nuestro app React
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
+  res.sendFile(path.resolve(__dirname, '../cliente/build', 'index.html'));
 });
 
 
